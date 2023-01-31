@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DevTools Concole JS</title>
+	<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<h1>Výlet 🛫 do console DevTools</h1>
+
+	<p>Testovací stránka pro ukázku toho, jak pracovat s konzolí vývojářského nástroje DevTools, která nám je neocenitelným pomocníkem v kurzu <a class="link" href="https://www.czechitas.cz/podtema/javascript">JavaScript</a> 🙂.</p>
+	<p>Někdy chceme sledovat konkrétní vlastnost, či element, ale nechceme pokaždé, když změníme vlastnost či hodnotu kódu v souborech jako jsou <code>style.css</code> či <code>main.js</code> ukládat a znovu načítat stránku.</p>
+	<p>K tomu nám pomůže console (čti konzole), která sama aktualizuje hodnotu, jakmile se změní.</p>
+	<p>Konzoli si otevřeme v prohlížeči stisknutím klávesnice <span class="key">F12</span> a můžeme se pustit do prozkoumávání a testování 😉.</p>
+
+	<section>
+		<h2>Př. 1. Přidat další text</h2>
+		<p>Doplň své jméno: <span id="jmeno"></span></p>
+	</section>
+
+	<section>
+		<h2>Př. 2. Změnit obrázek kočky na psa</h2>
+		<img class="obrazek" src="obrazky/kocka.jpg">
+	</section>
+
+	<section>
+		<h2>Př. 3. Tlačítka - přidat anebo odebrat barvu, skrýt tlačítko</h2>
+		<ul>
+			<li><code>id="pridej"</code> | přidat barvu <code>.cervena</code></li>
+			<li><code>id="odeber"</code> | odebrat barvu <code>.zelena</code></li>
+			<li><code>id="skryj"</code></li>
+		</ul>
+		<button onclick="pridejBarvu()" id="pridej" class="button__add">přidat</button>
+		<button onclick="odeberBarvu()" id="odeber" class="button__add zelena">odebrat</button>
+		<button onclick="skryjTlacitko()" id="skryj" class="button__add">skrýt</button>
+	</section>
+
+	<section>
+		<h2>Př. 4. Přepínat vlastnosti</h2>
+		<ul>
+			<li>měnit na <code>.kolecko</code></li>
+			<li>měnit na <code>.fialova</code></li>
+		</ul>
+		<div onmouseover="prepni()" class="tvar"></div>
+	</section>
+
+	<!--<div onclick="zmenBarvu()" id="ctverecek-1" class="ctverecek zluty"></div>
+	<div onmouseover="zmenBarvu()" id="ctverecek-1" class="ctverecek zluty"></div>
+
+	<div class="ctverecek zeleny"></div>-->
+		
+	<!--<button onclick="zavolejUdalost(event)" class="tlacitko">Čudlajs 1</button>
+	<button onclick="zavolejUdalost(event)" class="tlacitko">Čudlajs 2</button>
+	<button onclick="zavolejUdalost(event)" class="tlacitko">Čudlajs 3</button>
+
+	<audio src="audio/dingdingdang.mp3" preload="auto"></audio>-->
+
+	<script src="main.js"></script>
+</body>
+</html>
